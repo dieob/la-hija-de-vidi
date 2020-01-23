@@ -14,10 +14,13 @@ app.config(function($routeProvider) {
             templateUrl : '/pages/home.html',
             controller : 'HomeController'
         })
+        .when('/contact', {
+            templateUrl : '/pages/contact.html',
+            controller : 'HomeController'
+        })
 });
 
 app.controller('HomeController', function($scope) {
-    $scope.message = 'Hello from SecondController';
 });
         
     // Script to open and close sidebar
