@@ -18,9 +18,20 @@ app.config(function($routeProvider) {
             templateUrl : '/pages/contact.html',
             controller : 'HomeController'
         })
+        .when('/customers', {
+            templateUrl : '/pages/customers.html',
+            controller : 'CustomersController'
+        })
+        .when('/servicios', {
+            templateUrl : '/pages/home.html',
+            controller : 'HomeController'
+        })
 });
 
 app.controller('HomeController', function($scope) {
+});
+
+app.controller('CustomersController', function($scope) {
 });
         
     // Script to open and close sidebar
